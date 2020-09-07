@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Roman Kravchenko](https://up.htmlacademy.ru/htmlcss/29/user/1371839).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077)
 
 ---
 
