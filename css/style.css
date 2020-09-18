@@ -1,26 +1,29 @@
 /*Кастомные свойства*/
 :root {
---basic-black: #000000;
---basic-red: #EE3643;
---basic-green: #63A63E;
---basic-grey: #3D546F;
---basic-greylight: #C5C5C5;
---services-background: #F1F5F7;
---white: #FFFFFF;
---special-yellow: #FFBF47;
---special-blue: ##3BBCE3;
---special-lilac: #DC91D8;
---special-greenlight: #8ED78F;
---special-yellowlight: #FFD180;
---success: #5FBB2D;
---warning: #FFBF47;
---error: #BA2732;
---ratings-header: #F9F5F0;
---slider-header: rgba(0, 0, 0, 0.25);
---site-navigation: #32425C;
---footer: #293449;
---social-buttons: linear-gradient(0deg, #212A3A, #212A3A);
---background-header: rgba(0, 0, 0, 0.0001);
+  --basic-black: #000000;
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-greylight: #C5C5C5;
+  --services-background: #F1F5F7;
+  --white: #FFFFFF;
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --glossy-orange: #FFC047;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
+  --trends-header: #F9F5F0;
+  --slider-header: rgba(0, 0, 0, 0.25);
+  --site-navigation: #32425C;
+  --footer: #293449;
+  --social-buttons: linear-gradient(0deg, #212A3A, #212A3A);
+  --background-header: rgba(0, 0, 0, 0.0001);
+  --border-phone-header: #F3F7F9;
+  --old-price: #A9A9A9;
 }
 
 /*Глобальные настройки*/
@@ -30,14 +33,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
   color: var(--basic-black);
-  background-image: url("");
-
 }
+
+/*Общие свойства*/
 
 a {
   text-decoration: none;
@@ -49,12 +52,13 @@ img {
 }
 
 /*Меню навигации*/
+
 .main-navigation {
-background-color: var(--background-header);
+  background-color: var(--background-header);
 }
 
 .site-navigation {
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -63,17 +67,18 @@ background-color: var(--background-header);
   color: var(--white);
 
 }
-.site-navigation a {
-color: var(--white);
 
+.site-navigation a {
+  color: var(--white);
 }
 .site-navigation {
   list-style: none;
 }
 
-.text-header {
+/*Шапка сайта*/
 
-  font-family: Cuprum;
+.text-header {
+  font-family: Cuprum, Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
@@ -82,15 +87,16 @@ color: var(--white);
 }
 
 .phone-header {
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   color: #EE3643;
 }
+
 .address-header {
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -99,54 +105,230 @@ color: var(--white);
 }
 
 .login-link {
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black)
 }
+
 .registration-link {
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black)
+}
+
+.order-link {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+  background: var(--basic-green);
 }
 
 /*Блок преимуществ*/
 
-.features-list{
-  font-family: Cuprum;
+.features-list {
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   list-style: none;
+  color: var(--white);
 }
 
-.features-item {
-  font-family: Cuprum;
+.features-item-materials {
+  background: var(--special-yellow);
+}
+
+.features-item-tools {
+  background-color: var(--special-blue);
+}
+
+.features-item-machines {
+  background: var(--special-lilac);
+}
+
+.features-item-discounts {
+  background: var(--special-lilac);
+}
+
+.features-item-machines {
+  background: var(--special-lilac);
+}
+
+.features-item-discounts {
+  background: var(--special-greenlight);
+}
+
+.features-item-shipping {
+  background: var(--glossy-orange);
+}
+
+.features-button {
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-
+  color: var(--white);
 }
 
-.gallery-header {
-  font-family: Cuprum;
+/*Слайдер*/
+
+.red-button {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  background: var(--basic-red);
+}
+
+.gallery-header{
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .gallery-text {
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24px;  
+  line-height: 24px;
+}
+
+
+/*Заголовок популярные*/
+
+.trends {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--site-navigation);
+  background: var(--trends-header);
+}
+
+/*Карточки товаров*/
+
+.old-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: var(--old-price);
+}
+
+.new-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--basic-red);
+}
+
+/*Сервисы*/
+
+.page-h2 {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color:  var(--basic-black: #000000);
+}
+
+.services-header{
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--site-navigation);
+}
+
+/*Footer*/
+
+.about-company {
+  background-color: var(--site-navigation);
+}
+
+.about-company a {
+  color: var(--white);
+}
+
+.bottom-navigation-list  {
+  list-style: none;
+}
+
+.special-list  {
+  list-style: none;
+}
+
+.contacts-address {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--border-phone-header);
+}
+
+.bottom-navigation-list {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--border-phone-header);
+}
+
+.special-list {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.special-list a {
+  color: var(--special-yellowlight);
+}
+
+.footer-text {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.footer-link {
+  color: var(--special-yellowlight);
+}
+
+.page-footer {
+  background-color: var(--footer);
 }
