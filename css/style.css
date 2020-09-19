@@ -1,5 +1,6 @@
 /*Кастомные свойства*/
 :root {
+  --main-font: Cuprum, Arial, sans-serif;
   --basic-black: #000000;
   --basic-red: #EE3643;
   --basic-green: #63A63E;
