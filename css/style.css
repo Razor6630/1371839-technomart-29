@@ -53,6 +53,35 @@ img {
   height: auto;
 }
 
+/*Верхний логотип*/
+
+.logo {
+  background: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  width: 220px;
+  height: 47px;
+}
+.main-header-logo {
+  display: inline-block;
+  margin-left: 55px;
+  margin-top: 12px;
+}
+
+/*Нижний логотип*/
+
+.logo-footer {
+  background: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  width: 220px;
+  height: 68px;
+}
+
+.main-logo-footer {
+  display: inline-block;
+  margin-left: 41px;
+  margin-top: 20px;
+}
+
 /*Меню навигации*/
 
 .main-navigation {
