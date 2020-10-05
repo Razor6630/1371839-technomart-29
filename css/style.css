@@ -42,6 +42,19 @@ body {
   color: var(--basic-black);
 }
 
+/* Грид */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /*Общие свойства*/
 
 a {
@@ -53,9 +66,19 @@ img {
   height: auto;
 }
 
+/*Main header*/
+
+.main-header {
+  margin-bottom: 70px;
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;
+}
+
 /*Верхний логотип*/
 
 .logo {
+  outline: 5px solid yellow;
+outline-offset: -5px;
   background: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   width: 220px;
@@ -89,6 +112,8 @@ img {
 }
 
 .site-navigation {
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
@@ -172,7 +197,7 @@ img {
   color: var(--site-navigation);
 }
 
-.breadcrumps {
+.breadcrumbs {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
