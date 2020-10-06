@@ -108,10 +108,25 @@ outline-offset: -5px;
 /*Меню навигации*/
 
 .main-navigation {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-column: 1 / -1;
   background-color: var(--background-header);
 }
 
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .site-navigation {
+display: grid;
+grid-template-columns: auto auto auto auto auto auto auto;
+grid-column: 1 / -1;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
   font-family: var(--main-font);
