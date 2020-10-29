@@ -8,6 +8,7 @@
   --basic-greylight: #C5C5C5;
   --services-background: #F1F5F7;
   --white: #FFFFFF;
+  --white-transparent: rgba(255,255,255,0.3);
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
@@ -48,7 +49,7 @@ body {
   height: 100%;
 }
 
-.page-body {
+/.page-body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -70,15 +71,11 @@ img {
 
 .main-header {
   margin-bottom: 70px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 }
 
 /*Верхний логотип*/
 
 .logo {
-  outline: 5px solid yellow;
-  outline-offset: -5px;
   background: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   width: 220px;
@@ -108,27 +105,19 @@ img {
 /*Меню навигации*/
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  grid-column: 1 / -1;
   background-color: var(--background-header);
 }
 
-.main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+.wrapper {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .site-navigation {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
-  grid-column: 1 / -1;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
+  display:flex;
+  justify-content: space-around;
+  padding-top: 16px;
+  padding-bottom: 20px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
@@ -224,6 +213,56 @@ img {
 
 /*Блок преимуществ*/
 
+.container-features {
+  display: grid;
+  grid-template:
+    'res tool tech' 123px
+    'baner baner sale' 123px
+    'baner baner delivery' 123px / 300px 300px 300px;
+  grid-gap: 20px
+  }
+
+.features-header {
+margin-bottom: 0;
+margin-left: 24px;
+font-family: var(--main-font);
+font-style: normal;
+font-size: 24px;
+line-height: 30px;
+font-weight: bold;
+color: var(--white);
+}
+
+  .features-item-materials {
+    grid-area: res;
+    background: var(--special-yellow);
+  }
+
+  .features-item-tools {
+    grid-area: tool;
+    background-color: var(--special-blue);
+  }
+
+  .features-item-machines {
+    grid-area: tech;
+    background: var(--special-lilac)
+  }
+
+  .baner{
+    grid-area: baner;
+    background-image: url("../img/slide_1.jpg");
+  }
+
+  .features-item-discounts {
+    grid-area: sale;
+    background: var(--special-greenlight);
+  }
+
+  .features-item-delivery {
+    grid-area: delivery;
+    background: var(--glossy-orange);
+  }
+
 .features-list {
   font-family: var(--main-font);
   font-style: normal;
@@ -234,57 +273,61 @@ img {
   color: var(--white);
 }
 
-.features-item-materials {
-  background: var(--special-yellow);
-}
-
-.features-item-tools {
-  background-color: var(--special-blue);
-}
-
-.features-item-machines {
-  background: var(--special-lilac);
-}
-
-.features-item-discounts {
-  background: var(--special-lilac);
-}
-
-.features-item-machines {
-  background: var(--special-lilac);
-}
-
-.features-item-discounts {
-  background: var(--special-greenlight);
-}
-
-.features-item-shipping {
-  background: var(--glossy-orange);
-}
-
 .features-button {
+  display: inline-block;
+  margin-top: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 23px;
+  padding-right: 24px;
+  margin-left: 24px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
+  text-transform: uppercase;
+  background: var(--white-transparent);
+
+}
+
+.red-button {
+font-family: var(--main-font);
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: var(--white);
+background: var(--basic-red);
+text-transform: uppercase;
+}
+
+.button-trends {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 /*Слайдер*/
 
-.red-button {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--white);
-  background: var(--basic-red);
+.button-slider {
+display: inline-block;
+margin-top: 97px;
+margin-left: 24px;
+padding-left: 46px;
+padding-right: 46px;
+padding-top: 11px;
+padding-bottom: 9px;
 }
 
-.gallery-header{
+.gallery-header {
+  margin-top: 23px;
+  margin-left: 24px;
+  margin-bottom: 0;
   font-family: var(--main-font);
+  color: var(--white);
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -293,7 +336,10 @@ img {
 }
 
 .gallery-text {
+  margin-top: 5px;
+  margin-left: 24px;
   font-family: var(--main-font);
+  color: var(--white);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -301,9 +347,15 @@ img {
 }
 
 
+
+
 /*Заголовок популярные*/
 
 .trends {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 59px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;

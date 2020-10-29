@@ -12,7 +12,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <div class="site-navigation">
-        <div class="main-navigation-wrapper">
+        <div class="wrapper">
           <div class="logo">
             <a class="main-header-logo">
               <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт">
@@ -30,8 +30,7 @@
       <p class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <a class="login-link" href="#">Войти</a>
       <a class="registration-link" href="#">Регистрация</a>
-      <div class="main-navigation-wrapper">
-        <ul class="site-navigation">
+        <ul class="site-navigation wrapper">
           <li class="nav-item"><a href="index.html">Главная</a></li>
           <li class="nav-item"><a href="">Компания</a></li>
           <li class="nav-item"><a href="catalog.html">Каталог</a></li>
@@ -40,45 +39,47 @@
           <li class="nav-item"><a href="index.html">Доставка</a></li>
           <li class="nav-item"><a href="index.html">Контакты</a></li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="container">
+    <div class="wrapper">
     <h1>Интернет-магазин «Техномарт»</h1>
     <section class="features">
       <h2>Преимущества</h2>
-      <ul class="features-list">
-        <li class="features-item-materials">
-          <h3>Материалы</h3>
+      <div class="container-features">
+        <div class="features-item-materials">
+          <h3 class="features-header">Материалы</h3>
           <a class="features-button" href="#">На любой вкус</a>
-        </li>
-        <li class="features-item-tools">
-          <h3>Инструмент</h3>
+        </div>
+        <div class="features-item-tools">
+          <h3 class="features-header">Инструмент</h3>
           <a class="features-button" href="#">На все случаи жизни</a>
-        </li>
-        <li class="features-item-machines">
-          <h3>Техника</h3>
+        </div>
+        <div class="features-item-machines">
+          <h3 class="features-header">Техника</h3>
           <a class="features-button" href="#">Для стройки</a>
-        </li>
-        <li class="features-item-discounts">
-          <h3>Скидки 50%</h3>
+        </div>
+        <div class="features-item-discounts">
+          <h3 class="features-header">Скидки 50%</h3>
           <a class="features-button" href="#">На 350 товаров</a>
-        </li>
-        <li class="features-item-shipping">
-          <h3>Доставка</h3>
+        </div>
+        <div class="features-item-delivery">
+          <h3 class="features-header">Доставка</h3>
           <a class="features-button" href="#">Бесплатно</a>
-        </li>
-      </ul>
+        </div>
+        <div class="baner">
       <h2 class="gallery-header">Перфораторы</h2>
       <p class="gallery-text">Настоящие мужские игрушки</p>
-      <img src="img/slide_1.jpg" width="620" height="266" alt="Cлайд">
-      <a class="red-button" href="catalog.html">Открыть каталог</a>
+      <a class="red-button button-slider" href="catalog.html">Открыть каталог</a>
+    </div>
+      </div>
+      </div>
     </section>
     <section>
       <header>
-        <div class="trends">
-          <h2>Популярные товары</h2>
-          <a class="red-button" href="#">Все популярные товары</a>
+        <div class="trends wrapper">
+          <h2>Популярные товары:</h2>
+          <a class="red-button button-trends" href="#">Все популярные товары</a>
         </div>
       </header>
       <a class="product-link" href="#">
