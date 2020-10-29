@@ -27,6 +27,7 @@
   --background-header: rgba(0, 0, 0, 0.0001);
   --border-phone-header: #F3F7F9;
   --old-price: #A9A9A9;
+  --border: #EAEAEA;
 }
 
 /*Глобальные настройки*/
@@ -367,6 +368,18 @@ padding-bottom: 9px;
 }
 
 /*Карточки товаров*/
+
+.products {
+margin-top: 20px;
+display: flex;
+justify-content: space-between;
+}
+
+.card {
+border: solid 1px var(--border);  
+width: 220px;
+height: 318px;
+}
 
 .catalog-header {
   font-family: var(--main-font);
